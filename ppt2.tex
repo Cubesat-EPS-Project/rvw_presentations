@@ -10,9 +10,10 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{gensymb}
-\usepackage{adjustbox}
+%\usepackage{adjustbox}
 \usepackage{multirow}
 \usepackage{pdfpages}
+ \usepackage[export]{adjustbox}
 %\usetheme{CambridgeUS}
 %\usepackage[table,xcdraw]{xcolor}
 %\usepackage{pgfgantt}
@@ -408,14 +409,13 @@
 		
 	\end{frame}
 	
-  
 	\section{Hardware Design}
 	\begin{frame}{Hardware Design - Buck and Boost Converters }
 		\begin{figure}[h]
 			\centering
-			\includegraphics[\textwidth]{diag/Buckboost.pdf}
+			\includegraphics[width=1\textwidth]{diag/Buckboost.pdf}
 			\caption{Circuit design of buck and boost converters.}
-			\label{fig:mesh1}
+			\label{fig:bubo}
 		\end{figure}
 	\end{frame}
 
@@ -439,10 +439,10 @@
 	All convertors operate in continuous conduction mode.
 	\end{frame}
 
-		\begin{frame}{Hardware Design - Battery Charger }
+\begin{frame}{Hardware Design - Battery Charger }
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.77\textwidth]{diag/charg2.pdf}
+		\includegraphics[width=0.77\textwidth]{diag/charg.pdf}
 		\caption{Circuit design of Battery Charger}
 		\label{fig:mesh1}
 	\end{figure}
