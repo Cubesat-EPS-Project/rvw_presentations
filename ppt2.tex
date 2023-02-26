@@ -13,7 +13,7 @@
 %\usepackage{adjustbox}
 \usepackage{multirow}
 \usepackage{pdfpages}
- \usepackage[export]{adjustbox}
+\usepackage[export]{adjustbox}
 %\usetheme{CambridgeUS}
 %\usepackage[table,xcdraw]{xcolor}
 %\usepackage{pgfgantt}
@@ -149,6 +149,7 @@
 	\begin{frame}
 		
 		\frametitle{Objective}
+		\centering
 		To design and implement a fully autonomous power generation, storage and distribution system for a CubeSat 
 		
 		
@@ -162,687 +163,711 @@
 	
 	
 	% \begin{frame}
-	% 	\frametitle{Project Outline}
-	% 	Electrical Power System (EPS):
-	% 	\begin{itemize}
+		% 	\frametitle{Project Outline}
+		% 	Electrical Power System (EPS):
+		% 	\begin{itemize}
 			
-	% 		\item Harvests energy from the solar panels
-	% 		\item Manages power storage and distribution
-	% 		\item Protects circuits from damage
-	% 		\item Redundant architecture
-	% 	\end{itemize}
-	% \end{frame}
+			% 		\item Harvests energy from the solar panels
+			% 		\item Manages power storage and distribution
+			% 		\item Protects circuits from damage
+			% 		\item Redundant architecture
+			% 	\end{itemize}
+		% \end{frame}
 	
 	
-
+	
 	
 	
 	% \section{Literature Review}
 	% \begin{frame}{Literature Review}
-	% 	\begin{table}[]
-	% 		\begin{adjustbox}{width=\columnwidth,center}
-	% 			\begin{tabular}{|l|l|l|l|}
-	% 				\hline
-	% 				S.No. &
-	% 				Title &
-	% 				Author &
-	% 				Features \\ \hline
-	% 				1 &
-	% 				\begin{tabular}[c]{@{}l@{}}A Comprehensive Review on CubeSat\\ Electrical Power System Architectures,\\ in IEEE Transactions on Power Electronics,\\ vol. 37, no. 3, pp. 3161-3177, March 2022\end{tabular} &
-	% 				\begin{tabular}[c]{@{}l@{}}Amarendra Edpuganti ,\\ Vinod Khadkikar,\\ Mohamed Shawky El Moursi,\\ Hatem Zeineldin , Naji Al-Sayari,\\ Khalifa Al Hosani\end{tabular} &
-	% 				\begin{tabular}[c]{@{}l@{}}Architecture with PPT an\\ regulated DC-bus was\\ selected.\end{tabular} \\ \hline
-	% 				2 &
-	% 				\begin{tabular}[c]{@{}l@{}}Output power analysis of Tel-USat\\ electrical power system, AIP Conference\\ Proceedings 2226, 030007 (2020)\end{tabular} &
-	% 				\begin{tabular}[c]{@{}l@{}}Aulia Indana, Dharu Arseno,\\ Edwar, Adilla Safira\end{tabular} &
-	% 				\begin{tabular}[c]{@{}l@{}}Centralised architecture\\ was selected.\end{tabular} \\ \hline
-	% 				3 &
-	% 				\begin{tabular}[c]{@{}l@{}}Comparison of Peak Power Tracking Based\\ Electric Power System Architecture for\\ CubeSats, IEEE Transactions on Industry\\ Applications, vol. 57, no. 3, pp. 2758-2768,\\ May-June 2021\end{tabular} &
-	% 				\begin{tabular}[c]{@{}l@{}}A. Edpuganti, V. Khadkikar,\\ H. Zeineldin, M. S. E. Moursi,\\ M. Al Hosani\end{tabular} &
-	% 				\begin{tabular}[c]{@{}l@{}}Peak power transfer\\ is preferred to\\ direct power transfer.\end{tabular} \\ \hline
-	% 			\end{tabular}
-	% 		\end{adjustbox}
-	% 	\end{table}
-	% \end{frame}
+		% 	\begin{table}[]
+			% 		\begin{adjustbox}{width=\columnwidth,center}
+				% 			\begin{tabular}{|l|l|l|l|}
+					% 				\hline
+					% 				S.No. &
+					% 				Title &
+					% 				Author &
+					% 				Features \\ \hline
+					% 				1 &
+					% 				\begin{tabular}[c]{@{}l@{}}A Comprehensive Review on CubeSat\\ Electrical Power System Architectures,\\ in IEEE Transactions on Power Electronics,\\ vol. 37, no. 3, pp. 3161-3177, March 2022\end{tabular} &
+					% 				\begin{tabular}[c]{@{}l@{}}Amarendra Edpuganti ,\\ Vinod Khadkikar,\\ Mohamed Shawky El Moursi,\\ Hatem Zeineldin , Naji Al-Sayari,\\ Khalifa Al Hosani\end{tabular} &
+					% 				\begin{tabular}[c]{@{}l@{}}Architecture with PPT an\\ regulated DC-bus was\\ selected.\end{tabular} \\ \hline
+					% 				2 &
+					% 				\begin{tabular}[c]{@{}l@{}}Output power analysis of Tel-USat\\ electrical power system, AIP Conference\\ Proceedings 2226, 030007 (2020)\end{tabular} &
+					% 				\begin{tabular}[c]{@{}l@{}}Aulia Indana, Dharu Arseno,\\ Edwar, Adilla Safira\end{tabular} &
+					% 				\begin{tabular}[c]{@{}l@{}}Centralised architecture\\ was selected.\end{tabular} \\ \hline
+					% 				3 &
+					% 				\begin{tabular}[c]{@{}l@{}}Comparison of Peak Power Tracking Based\\ Electric Power System Architecture for\\ CubeSats, IEEE Transactions on Industry\\ Applications, vol. 57, no. 3, pp. 2758-2768,\\ May-June 2021\end{tabular} &
+					% 				\begin{tabular}[c]{@{}l@{}}A. Edpuganti, V. Khadkikar,\\ H. Zeineldin, M. S. E. Moursi,\\ M. Al Hosani\end{tabular} &
+					% 				\begin{tabular}[c]{@{}l@{}}Peak power transfer\\ is preferred to\\ direct power transfer.\end{tabular} \\ \hline
+					% 			\end{tabular}
+				% 		\end{adjustbox}
+			% 	\end{table}
+		% \end{frame}
 	
 	% \begin{frame}{Literature Review (contd...)}
-	% 	\begin{table}[]
-	% 		\begin{adjustbox}{width=\columnwidth,center}
-	% 			\begin{tabular}{|l|l|l|l|}
-	% 				\hline
-	% 				S.No &
-	% 				Title and Journal &
-	% 				Author &
-	% 				Features \\ \hline
-	% 				4 &
-	% 				\begin{tabular}[c]{@{}l@{}}A Review of Battery Technology\\ in CubeSats and Small Satellite\\ Solutions,Energies, vol. 13, 2020\end{tabular} &
-	% 				\begin{tabular}[c]{@{}l@{}}Knap, Vaclav \& Vestergaard,\\ Lars \& Stroe, Daniel-Ioan\end{tabular} &
-	% 				\begin{tabular}[c]{@{}l@{}}Solar cells with Li-ion\\ batteries for storage is\\ preferred.\end{tabular} \\ \hline
-	% 				5 &
-	% 				\begin{tabular}[c]{@{}l@{}}Review on the charging techniques\\ of a Li-Ion battery, Third International\\ Conference on Technological Advances\\ in Electrical, Electronics and Computer\\ Engineering (TAEECE), 2015\end{tabular} &
-	% 				E. Ayoub and N. Karami &
-	% 				Charging at 5-45\degree C \\ \hline
-	% 			\end{tabular}
-	% 		\end{adjustbox}
-	% 	\end{table}
-	% \end{frame}
+		% 	\begin{table}[]
+			% 		\begin{adjustbox}{width=\columnwidth,center}
+				% 			\begin{tabular}{|l|l|l|l|}
+					% 				\hline
+					% 				S.No &
+					% 				Title and Journal &
+					% 				Author &
+					% 				Features \\ \hline
+					% 				4 &
+					% 				\begin{tabular}[c]{@{}l@{}}A Review of Battery Technology\\ in CubeSats and Small Satellite\\ Solutions,Energies, vol. 13, 2020\end{tabular} &
+					% 				\begin{tabular}[c]{@{}l@{}}Knap, Vaclav \& Vestergaard,\\ Lars \& Stroe, Daniel-Ioan\end{tabular} &
+					% 				\begin{tabular}[c]{@{}l@{}}Solar cells with Li-ion\\ batteries for storage is\\ preferred.\end{tabular} \\ \hline
+					% 				5 &
+					% 				\begin{tabular}[c]{@{}l@{}}Review on the charging techniques\\ of a Li-Ion battery, Third International\\ Conference on Technological Advances\\ in Electrical, Electronics and Computer\\ Engineering (TAEECE), 2015\end{tabular} &
+					% 				E. Ayoub and N. Karami &
+					% 				Charging at 5-45\degree C \\ \hline
+					% 			\end{tabular}
+				% 		\end{adjustbox}
+			% 	\end{table}
+		% \end{frame}
 	
 	% 	\section{Methodology}	
 	% \begin{frame}{Methodology}
-	% 	\begin{itemize}
+		% 	\begin{itemize}
 			
-	% 		\item Identifying the power requirements
-	% 		\item Architecture design and topology selection
-	% 		\item Forming Specifications
+			% 		\item Identifying the power requirements
+			% 		\item Architecture design and topology selection
+			% 		\item Forming Specifications
 			
-	% 		\item Design and simulation
-	% 		\item Procurement of components
-	% 		\item Fabrication and testing
+			% 		\item Design and simulation
+			% 		\item Procurement of components
+			% 		\item Fabrication and testing
 			
-	% 	\end{itemize} 
+			% 	\end{itemize} 
 		
-	% \end{frame}
+		% \end{frame}
 	% 	\section{Power Budget} 
 	% \begin{frame}{Power Budget}
-	% 	% Please add the following required packages to your document preamble:
-	% 	% \usepackage[table,xcdraw]{xcolor}
-	% 	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-	% 	\begin{table}[]
-	% 		\begin{adjustbox}{width=\columnwidth,center}
-	% 			\begin{tabular}{|l|l|r|r|r|r|r|r|r|}
-	% 				\hline
-	% 				\rowcolor[HTML]{F46524} 
-	% 				\textbf{\begin{tabular}[c]{@{}l@{}}Sub-\\ system\end{tabular}} &
-	% 				&
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Voltage\\     (V)\end{tabular}}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Max.\\ Current\\  (mA)\end{tabular}}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Power \\ (mW)\end{tabular}}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Contingency \\ 5\%\end{tabular}}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Margin\\ 20\%\end{tabular}}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Duty\\ Cycle\\ (\%)\end{tabular}}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Energy\\ (Wh)\end{tabular}}} \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				\textbf{ADCS} &
-	% 				ADCS &
-	% 				3.3 &
-	% 				20 &
-	% 				66 &
-	% 				69.3 &
-	% 				83.16 &
-	% 				100 &
-	% 				0.133725438 \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				&
-	% 				Magnetorquer &
-	% 				3.3 &
-	% 				100 &
-	% 				330 &
-	% 				346.5 &
-	% 				415.8 &
-	% 				50 &
-	% 				0.334313595 \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				\textbf{OBC} &
-	% 				OBC &
-	% 				5 &
-	% 				40 &
-	% 				200 &
-	% 				210 &
-	% 				252 &
-	% 				100 &
-	% 				0.4052286 \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				\textbf{Rx-Tx} &
-	% 				Telemetry &
-	% 				5 &
-	% 				300 &
-	% 				1500 &
-	% 				1575 &
-	% 				1890 &
-	% 				11 &
-	% 				0.334313595 \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				&
-	% 				Beacon &
-	% 				5 &
-	% 				20 &
-	% 				100 &
-	% 				105 &
-	% 				126 &
-	% 				100 &
-	% 				0.2026143 \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				&
-	% 				GPS &
-	% 				3.3 &
-	% 				40 &
-	% 				132 &
-	% 				138.6 &
-	% 				166.32 &
-	% 				30 &
-	% 				0.0802352628 \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				\textbf{Payload} &
-	% 				LoRa &
-	% 				5 &
-	% 				20 &
-	% 				100 &
-	% 				105 &
-	% 				126 &
-	% 				10 &
-	% 				0.02026143 \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				&
-	% 				&
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				\textbf{EPS} &
-	% 				EPS &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}-} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}-} &
-	% 				160 &
-	% 				168 &
-	% 				201.6 &
-	% 				100 &
-	% 				0.32418288 \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				&
-	% 				Thermal &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}-} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}-} &
-	% 				250 &
-	% 				262.5 &
-	% 				315 &
-	% 				32 &
-	% 				0.16209144 \\ \hline
-	% 				\rowcolor[HTML]{FFE6DD} 
-	% 				&
-	% 				&
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}\textbf{Tot Power(mW)}} &
-	% 				\textbf{3575.88} &
-	% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}\textbf{Tot. Energy}} &
-	% 				\textbf{1.997} \\ \hline
-	% 			\end{tabular}
-	% 		\end{adjustbox}
-	% 	\end{table}
+		% 	% Please add the following required packages to your document preamble:
+		% 	% \usepackage[table,xcdraw]{xcolor}
+		% 	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+		% 	\begin{table}[]
+			% 		\begin{adjustbox}{width=\columnwidth,center}
+				% 			\begin{tabular}{|l|l|r|r|r|r|r|r|r|}
+					% 				\hline
+					% 				\rowcolor[HTML]{F46524} 
+					% 				\textbf{\begin{tabular}[c]{@{}l@{}}Sub-\\ system\end{tabular}} &
+					% 				&
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Voltage\\     (V)\end{tabular}}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Max.\\ Current\\  (mA)\end{tabular}}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Power \\ (mW)\end{tabular}}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Contingency \\ 5\%\end{tabular}}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Margin\\ 20\%\end{tabular}}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Duty\\ Cycle\\ (\%)\end{tabular}}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{F46524}\textbf{\begin{tabular}[c]{@{}l@{}}Energy\\ (Wh)\end{tabular}}} \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				\textbf{ADCS} &
+					% 				ADCS &
+					% 				3.3 &
+					% 				20 &
+					% 				66 &
+					% 				69.3 &
+					% 				83.16 &
+					% 				100 &
+					% 				0.133725438 \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				&
+					% 				Magnetorquer &
+					% 				3.3 &
+					% 				100 &
+					% 				330 &
+					% 				346.5 &
+					% 				415.8 &
+					% 				50 &
+					% 				0.334313595 \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				\textbf{OBC} &
+					% 				OBC &
+					% 				5 &
+					% 				40 &
+					% 				200 &
+					% 				210 &
+					% 				252 &
+					% 				100 &
+					% 				0.4052286 \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				\textbf{Rx-Tx} &
+					% 				Telemetry &
+					% 				5 &
+					% 				300 &
+					% 				1500 &
+					% 				1575 &
+					% 				1890 &
+					% 				11 &
+					% 				0.334313595 \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				&
+					% 				Beacon &
+					% 				5 &
+					% 				20 &
+					% 				100 &
+					% 				105 &
+					% 				126 &
+					% 				100 &
+					% 				0.2026143 \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				&
+					% 				GPS &
+					% 				3.3 &
+					% 				40 &
+					% 				132 &
+					% 				138.6 &
+					% 				166.32 &
+					% 				30 &
+					% 				0.0802352628 \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				\textbf{Payload} &
+					% 				LoRa &
+					% 				5 &
+					% 				20 &
+					% 				100 &
+					% 				105 &
+					% 				126 &
+					% 				10 &
+					% 				0.02026143 \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				&
+					% 				&
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				\textbf{EPS} &
+					% 				EPS &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}-} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}-} &
+					% 				160 &
+					% 				168 &
+					% 				201.6 &
+					% 				100 &
+					% 				0.32418288 \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				&
+					% 				Thermal &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}-} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}-} &
+					% 				250 &
+					% 				262.5 &
+					% 				315 &
+					% 				32 &
+					% 				0.16209144 \\ \hline
+					% 				\rowcolor[HTML]{FFE6DD} 
+					% 				&
+					% 				&
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}\textbf{Tot Power(mW)}} &
+					% 				\textbf{3575.88} &
+					% 				\multicolumn{1}{l|}{\cellcolor[HTML]{FFE6DD}\textbf{Tot. Energy}} &
+					% 				\textbf{1.997} \\ \hline
+					% 			\end{tabular}
+				% 		\end{adjustbox}
+			% 	\end{table}
 		
 		
-	% \end{frame}
-
-%	\begin{frame}{Power Budget (Contd.)}
-%	
-%	3.3V Bus:
-%\begin{itemize}
-%	\item Max. current: 160mA
-%	\item Max. power: 160mA
-%	
-%\end{itemize}
-%
-%	5V Bus:
-%\begin{itemize}
-%	\item Max. current: 380mA
-%	
-%\end{itemize}
-%	
-%\end{frame}
-
-
-
-	\section{System Architecture}
-	\begin{frame}{System Architecture}
-		
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.9\textwidth]{diag/Architecture.pdf}
-			\caption{CubeSat EPS Architecture}
-			\label{fig:mesh1}
-		\end{figure}
+		% \end{frame}
+	
+	%	\begin{frame}{Power Budget (Contd.)}
+		%	
+		%	3.3V Bus:
+		%\begin{itemize}
+		%	\item Max. current: 160mA
+		%	\item Max. power: 160mA
+		%	
+		%\end{itemize}
+		%
+		%	5V Bus:
+		%\begin{itemize}
+		%	\item Max. current: 380mA
+		%	
+		%\end{itemize}
+		%	
+		%\end{frame}
 		
 		
-	\end{frame}
-	
-	\section{Hardware Design}
-	\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring }
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.7\textwidth]{diag/1.pdf}
-			\caption{Circuit design of buck and boost converters with monitoring.}
-			\label{fig:bubo}
-		\end{figure}
-	\end{frame}
-
-% \begin{frame}{Hardware Design - Buck and Boost Converters (Contd.)}
-% 	Buck Converter:
-% 	\begin{itemize}
-% 		\item IC: TPS62203
-% 		\item Input Voltage: 3.6 - 5V
-% 		\item Output Voltage: 3.3V
-% 		\item Switching Frequency: 1MHz
-% 		\item Output Current: 300mA (max.)
-% 		\end{itemize}
-% 		Boost Converter:
-% 			\begin{itemize}
-% 			\item IC: LTC3426
-% 			\item Input Voltage: 3.6 - 5V
-% 			\item Output Voltage: 5V
-% 			\item Switching Frequency: 1.2MHz
-% 			\item Output Current: 500mA (max.)
-% 		\end{itemize}
-% 	All convertors operate in continuous conduction mode.
-% 	\end{frame}
-\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring (Contd.) }
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.6\textwidth]{diag/1 pcb.png}
-			\caption{PCB Layout of buck and boost converters with monitoring.}
-			\label{fig:bubo}
-		\end{figure}
-	\end{frame}
-	\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring (Contd.) }
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.7\textwidth]{diag/1 3d.png}
-			\caption{3-D model of buck and boost converters with monitoring.}
-			\label{fig:bubo}
-		\end{figure}
-	\end{frame}
-
-
-\begin{frame}{Hardware Design - Battery Charger }
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.77\textwidth]{diag/charg.pdf}
-		\caption{Circuit design of Battery Charger}
-		\label{fig:mesh1}
-	\end{figure}
-\end{frame}
-
-
-% \begin{frame}{Hardware Design - Battery Charger (Contd.)}
-% 	Synchronous Buck Battery Charger:
-% 	\begin{itemize}
-% 		\item IC: BQ25302 (With External Power Path configuration)
-% 		\item Input Voltage: 5V
-% 		\item Output Voltage: 4.2V (max.)
-% 		\item Switching Frequency: 1.2MHz
-% 		\item Output Current: Limited to 1.2A
-% 		\item Thermistor: Semitec 103AT-2 (10k\ohm)
-% 		\item Charging Temperature: Limited between 0 - 45 C
-% 				\end{itemize}
-% 	\end{frame}
-\begin{frame}{Hardware Design - Battery Charger (Contd.) }
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.6\textwidth]{diag/charg pcb.png}
-		\caption{PCB Layout of Battery Charger}
-		\label{fig:mesh1}
-	\end{figure}
-\end{frame}
-\begin{frame}{Hardware Design - Battery Charger (Contd.) }
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.65\textwidth]{diag/charg 3d.png}
-		\caption{3-D modelof Battery Charger}
-		\label{fig:mesh1}
-	\end{figure}
-\end{frame}
-
-
-
-	
-	\begin{frame}{Hardware Design - MPPT }
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=1\textwidth]{diag/MpptDemoBoard.pdf}
-			\caption{Circuit design of MPPT.}
-			\label{fig:mesh1}
-		\end{figure}
-	\end{frame}
-
-% 	\begin{frame}{Hardware Design - MPPT (Contd.)}
-% 	\begin{itemize}
-% 	\item IC: SPV1040
-% 	\item MPPT with Perturb and Observe algorithm	
-% 	\item Input Voltage: 0.3 - 5.5V
-% 	\item Output Voltage: 5V
-% 	\item Switching Frequency: 100kHz
-% 	\item Inbuilt over-current, temperature protection
-% 	\item Efficiency: 95\%
-% \end{itemize}
-% \end{frame}
-	\begin{frame}{Hardware Design - MPPT (Contd.) }
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.6\textwidth]{diag/MpptDemopcb.png}
-			\caption{PCB Layout of MPPT.}
-			\label{fig:mesh1}
-		\end{figure}
-	\end{frame}
- 	\begin{frame}{Hardware Design - MPPT (Contd.)}
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.6\textwidth]{diag/MpptDemo3d.png}
-			\caption{3-D model of MPPT.}
-			\label{fig:mesh1}
-		\end{figure}
-	\end{frame}
-
- %    \begin{frame}
- %    \frametitle{Hardware Design - Microcontroller}
-    
- %       STM 32:
- %      \begin{itemize}
-        
- %        \item CPU: ARM 32-bit Cortex M4 
- %        \item Flash memory: 512KB
- %        \item Up to 81 I/O ports with interrupt capability
- %        \item Up to 78 fast I/Os up to 42 MHz
- %        \item 3 x I2C interfaces, 3 USARTs, 4 SPIs
- %        \item All I/O ports are 5 V-tolerant
- %      \end{itemize}
- %    \end{frame}
-    
-	% \begin{frame}{Hardware Design - Solar panels}
-	% 	Solar panel:
-	% 		\begin{itemize}
-	% 		\item TJ Solar Cell 3G30C
-	% 		\item 30$\%$ Triple Junction GaAs Junction Solar Cell
 		
-	% 		\item Average Open Circuit Voltage: 2.7V
-	% 		\item Maximum Power Point Voltage: 2.41V
-	% 		\item Average Short Circuit Current: 520.2 mA
-	% 		\item Maximum Power Point Current: 504.4mA
-	% 		\item Average Efficiency at 1353 $W/m^{2}$: 29.8$\%$
-
-	% 	\end{itemize}
-	% \end{frame}
-	
-	
-	% 	\begin{frame}{Hardware Design - Solar panels (Contd.)}
-	% 	Solar panel:
-	% 	\begin{itemize}
-	% 		\item Each side has 2 cells in series
-	% 		\item Max. current per side: 0.5A
-	% 		\item Panels on opposite faces are connected in parallel
-	% 		\item Max. voltage per side: <4.8V
-	% 	\end{itemize}
-	% \end{frame}
-	
-	
-	% 	\begin{frame}{Hardware Design - Battery}
-	% 	Battery:
-	% 	\begin{itemize}
-	% 		\item Panasonic NCR 18650 GA Li Ion cell
-	% 		\item Voltage: 3.7V - 4.2V
-	% 		\item Capacity: 3500mAh
-	% 		\item 1800 cycles till capacity reduces to 60\%
-
-	% 	\end{itemize}
-	% \end{frame}
-	
-%	
-%		\begin{frame}{Hardware Design - Voltage and Current monitoring IC}
-%		
-%			\begin{itemize}
-%			\item IC: LTC 2990
-%			\item Quad input
-%			\item Voltage and Current Monitoring
-%			\item Communication via I2C serial interface
-%		\end{itemize}
-%	\end{frame}
-%	
-	
+		\section{System Architecture}
+		\begin{frame}{System Architecture}
+			%updated
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.9\textwidth]{diag1.pdf}
+				\caption{CubeSat EPS Architecture}
+				\label{fig:mesh1}
+			\end{figure}
+			
+			
+		\end{frame}
 		
-% 	\begin{frame}
-% 		\frametitle{Hardware Design - Voltage and Current monitoring IC}
+		\section{Hardware Design}
+		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\textwidth]{diag/1.pdf}
+				\caption{Circuit design of buck and boost converters with monitoring}
+				\label{fig:bubo}
+			\end{figure}
+		\end{frame}
 		
-% 		\begin{minipage}{0.5\textwidth}
-% 		\begin{itemize}
-% 	\item IC: LTC 2990
-% 	\item Quad input
-% 	\item Voltage and Current Monitoring
-% 	\item Communication via I2C serial interface
-% \end{itemize}
-% 		\end{minipage}
-% 		\begin{minipage}{0.3\textwidth}
-% 			\begin{figure}
-% 				\includegraphics[width=5.1cm]{diag/sense.png}
-% 				\begin{center}
-% 					\caption{LTC2990}
-% 				\end{center}
-% 				\label{fig:trac2}
+		% \begin{frame}{Hardware Design - Buck and Boost Converters (Contd.)}
+			% 	Buck Converter:
+			% 	\begin{itemize}
+				% 		\item IC: TPS62203
+				% 		\item Input Voltage: 3.6 - 5V
+				% 		\item Output Voltage: 3.3V
+				% 		\item Switching Frequency: 1MHz
+				% 		\item Output Current: 300mA (max.)
+				% 		\end{itemize}
+			% 		Boost Converter:
+			% 			\begin{itemize}
+				% 			\item IC: LTC3426
+				% 			\item Input Voltage: 3.6 - 5V
+				% 			\item Output Voltage: 5V
+				% 			\item Switching Frequency: 1.2MHz
+				% 			\item Output Current: 500mA (max.)
+				% 		\end{itemize}
+			% 	All convertors operate in continuous conduction mode.
+			% 	\end{frame}
+		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring (Contd.) }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.6\textwidth]{diag/1 pcb.png}
+				\caption{PCB Layout of buck and boost converters with monitoring}
+				\label{fig:bubo}
+			\end{figure}
+		\end{frame}
+		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring (Contd.) }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\textwidth]{diag/1 3d.png}
+				\caption{3-D model of buck and boost converters with monitoring}
+				\label{fig:bubo}
+			\end{figure}
+		\end{frame}
+		
+		
+		\begin{frame}{Hardware Design - Battery Charger }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.77\textwidth]{diag/charg.pdf}
+				\caption{Circuit design of Battery Charger}
+				\label{fig:mesh1}
+			\end{figure}
+		\end{frame}
+		
+		
+		% \begin{frame}{Hardware Design - Battery Charger (Contd.)}
+			% 	Synchronous Buck Battery Charger:
+			% 	\begin{itemize}
+				% 		\item IC: BQ25302 (With External Power Path configuration)
+				% 		\item Input Voltage: 5V
+				% 		\item Output Voltage: 4.2V (max.)
+				% 		\item Switching Frequency: 1.2MHz
+				% 		\item Output Current: Limited to 1.2A
+				% 		\item Thermistor: Semitec 103AT-2 (10k\ohm)
+				% 		\item Charging Temperature: Limited between 0 - 45 C
+				% 				\end{itemize}
+			% 	\end{frame}
+		\begin{frame}{Hardware Design - Battery Charger (Contd.) }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.6\textwidth]{diag/charg pcb.png}
+				\caption{PCB Layout of Battery Charger}
+				\label{fig:mesh1}
+			\end{figure}
+		\end{frame}
+		\begin{frame}{Hardware Design - Battery Charger (Contd.) }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.65\textwidth]{diag/charg 3d.png}
+				\caption{3-D model of Battery Charger}
+				\label{fig:mesh1}
+			\end{figure}
+		\end{frame}
+		
+		
+		
+		
+		\begin{frame}{Hardware Design - MPPT }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=1\textwidth]{diag/MpptDemoBoard.pdf}
+				\caption{Circuit design of MPPT}
+				\label{fig:mesh1}
+			\end{figure}
+		\end{frame}
+		
+		% 	\begin{frame}{Hardware Design - MPPT (Contd.)}
+			% 	\begin{itemize}
+				% 	\item IC: SPV1040
+				% 	\item MPPT with Perturb and Observe algorithm	
+				% 	\item Input Voltage: 0.3 - 5.5V
+				% 	\item Output Voltage: 5V
+				% 	\item Switching Frequency: 100kHz
+				% 	\item Inbuilt over-current, temperature protection
+				% 	\item Efficiency: 95\%
+				% \end{itemize}
+			% \end{frame}
+		\begin{frame}{Hardware Design - MPPT (Contd.) }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.6\textwidth]{diag/MpptDemopcb.png}
+				\caption{PCB Layout of MPPT}
+				\label{fig:mesh1}
+			\end{figure}
+		\end{frame}
+		\begin{frame}{Hardware Design - MPPT (Contd.)}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.6\textwidth]{diag/MpptDemo3d.png}
+				\caption{3-D model of MPPT}
+				\label{fig:mesh1}
+			\end{figure}
+		\end{frame}
+		\begin{frame}{Hardware Design - Protection }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\textwidth]{diag/Prot_Circ.pdf}
+				\caption{Circuit design for protection}
+				\label{fig:mesh1}
+			\end{figure}
+		\end{frame}
+		\begin{frame}{Hardware Design - Protection (Contd.) }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\textwidth]{diag/prot_circ_layout2.png}
+				\caption{PCB Layout of protection circuit}
+				\label{fig:mesh1}
+			\end{figure}
+		\end{frame}
+		\begin{frame}{Hardware Design - Protection (Contd.) }
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.75\textwidth]{diag/prot_circ_3d.png}
+				\caption{3-D model of protection circuit}
+				\label{fig:mesh1}
+			\end{figure}
+		\end{frame}
+		
+		%    \begin{frame}
+			%    \frametitle{Hardware Design - Microcontroller}
+			
+			%       STM 32:
+			%      \begin{itemize}
 				
-% 			\end{figure}
-			
-% 		\end{minipage}
+				%        \item CPU: ARM 32-bit Cortex M4 
+				%        \item Flash memory: 512KB
+				%        \item Up to 81 I/O ports with interrupt capability
+				%        \item Up to 78 fast I/Os up to 42 MHz
+				%        \item 3 x I2C interfaces, 3 USARTs, 4 SPIs
+				%        \item All I/O ports are 5 V-tolerant
+				%      \end{itemize}
+			%    \end{frame}
 		
-% 	\end{frame}
-	
-% 	\begin{frame}{Circuit protection}
-% 	\begin{itemize}
-
-%       \item IC: LTC4361-2
-%       \item Over voltage and over current protection
-%       \item Auto reset after the event
-%       \item Mosfet used as switch
-
-%     \end{itemize}
-
-%     \begin{figure}[h]
-% 			\centering
-% 			\includegraphics[width=0.4\textwidth]{diag/Protecc.png}
-% 			\caption{LTC4361-2 Overvoltage/Overcurrent
-% Protection Controller}
-% 			\label{fig:mesh1}
-% 		\end{figure}
-% 	\end{frame}
-	% \section{Requirements}
-	% \begin{frame}{Requirements}
-	% 	\begin{minipage}{0.5\textwidth}
-	% 		Equipments Requirements:
-	% 		\begin{itemize}
+		% \begin{frame}{Hardware Design - Solar panels}
+			% 	Solar panel:
+			% 		\begin{itemize}
+				% 		\item TJ Solar Cell 3G30C
+				% 		\item 30$\%$ Triple Junction GaAs Junction Solar Cell
 				
-	% 			\item SMD Soldering Station
-	% 			\item Oscilloscope
-	% 			\item Power Supply
-	% 			\item Function Generator
-	% 		\end{itemize} 
-	% 	\end{minipage}
-	% 	\begin{minipage}{0.3\textwidth}
-	% 		Software Requirements:
-	% 		\begin{itemize}
+				% 		\item Average Open Circuit Voltage: 2.7V
+				% 		\item Maximum Power Point Voltage: 2.41V
+				% 		\item Average Short Circuit Current: 520.2 mA
+				% 		\item Maximum Power Point Current: 504.4mA
+				% 		\item Average Efficiency at 1353 $W/m^{2}$: 29.8$\%$
 				
-	% 			\item MATLAB/Spice
-	% 			\item KiCad
-	% 			\item STM32 CubeIDE
+				% 	\end{itemize}
+			% \end{frame}
+		
+		
+		% 	\begin{frame}{Hardware Design - Solar panels (Contd.)}
+			% 	Solar panel:
+			% 	\begin{itemize}
+				% 		\item Each side has 2 cells in series
+				% 		\item Max. current per side: 0.5A
+				% 		\item Panels on opposite faces are connected in parallel
+				% 		\item Max. voltage per side: <4.8V
+				% 	\end{itemize}
+			% \end{frame}
+		
+		
+		% 	\begin{frame}{Hardware Design - Battery}
+			% 	Battery:
+			% 	\begin{itemize}
+				% 		\item Panasonic NCR 18650 GA Li Ion cell
+				% 		\item Voltage: 3.7V - 4.2V
+				% 		\item Capacity: 3500mAh
+				% 		\item 1800 cycles till capacity reduces to 60\%
 				
-	% 		\end{itemize} 
+				% 	\end{itemize}
+			% \end{frame}
+		
+		%	
+		%		\begin{frame}{Hardware Design - Voltage and Current monitoring IC}
+			%		
+			%			\begin{itemize}
+				%			\item IC: LTC 2990
+				%			\item Quad input
+				%			\item Voltage and Current Monitoring
+				%			\item Communication via I2C serial interface
+				%		\end{itemize}
+			%	\end{frame}
+		%	
+		
+		
+		% 	\begin{frame}
+			% 		\frametitle{Hardware Design - Voltage and Current monitoring IC}
 			
-	% 	\end{minipage}
-	% \end{frame}
-	
-	
-	
-	% \section{Budget Estimate}
-	% \begin{frame}{Budget Estimate: Component cost}
-	% 	\begin{table}[]
-	% 		\begin{adjustbox}{width=\columnwidth,center}
-	% 			\begin{tabular}{|r|l|l|r|r|r|}
-	% 				\hline
-	% 				\multicolumn{1}{|l|}{Sl No.} & Component & Description & \multicolumn{1}{l|}{No.} & \multicolumn{1}{l|}{Cost per unit} & \multicolumn{1}{l|}{Total Cost} \\ \hline
-	% 				\multicolumn{1}{|l|}{}       &           &             & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{}           \\ \hline
-	% 				1                      & SPV1040T            & MPPT IC                             & 6                     & 400                   & 2400  \\ \hline
-	% 				2                      & BQ25302             & Battery Charger IC                  & 2                     & 150                   & 300   \\ \hline
-	% 				3                      & NCR18650            & Battery                             & 2                     & 800                   & 1600  \\ \hline
-	% 				4                      & TPS62203DBVTGH      & Buck Converter                      & 2                     & 150                   & 300   \\ \hline
-	% 				5                      & LTC3426ES6\#TRPBF   & Boost Converter                     & 2                     & 500                   & 1000  \\ \hline
-	% 				6                      & LTC2990CMS\#TRPBF   & Voltage, Current Measuring          & 5                     & 560                   & 2800  \\ \hline
-	% 				7                      & LTC 4361CT68-1      & Overvoltage, overcurrent protection & 5                     & 500                   & 2500  \\ \hline
-	% 				8                      & STM 32 F401RE       & Microcontroller                     & 1                     & 2500                  & 2500  \\ \hline
-	% 				9                      & Miscellaneous costs &                                     & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & 2000  \\ \hline
-	% 				\multicolumn{1}{|l|}{} &                     &                                     & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & 15400 \\ \hline
-	% 			\end{tabular}
-	% 		\end{adjustbox}
-	% 	\end{table}
+			% 		\begin{minipage}{0.5\textwidth}
+				% 		\begin{itemize}
+					% 	\item IC: LTC 2990
+					% 	\item Quad input
+					% 	\item Voltage and Current Monitoring
+					% 	\item Communication via I2C serial interface
+					% \end{itemize}
+				% 		\end{minipage}
+			% 		\begin{minipage}{0.3\textwidth}
+				% 			\begin{figure}
+					% 				\includegraphics[width=5.1cm]{diag/sense.png}
+					% 				\begin{center}
+						% 					\caption{LTC2990}
+						% 				\end{center}
+					% 				\label{fig:trac2}
+					
+					% 			\end{figure}
+				
+				% 		\end{minipage}
+			
+			% 	\end{frame}
+		
+		% 	\begin{frame}{Circuit protection}
+			% 	\begin{itemize}
+				
+				%       \item IC: LTC4361-2
+				%       \item Over voltage and over current protection
+				%       \item Auto reset after the event
+				%       \item Mosfet used as switch
+				
+				%     \end{itemize}
+			
+			%     \begin{figure}[h]
+				% 			\centering
+				% 			\includegraphics[width=0.4\textwidth]{diag/Protecc.png}
+				% 			\caption{LTC4361-2 Overvoltage/Overcurrent
+					% Protection Controller}
+				% 			\label{fig:mesh1}
+				% 		\end{figure}
+			% 	\end{frame}
+		% \section{Requirements}
+		% \begin{frame}{Requirements}
+			% 	\begin{minipage}{0.5\textwidth}
+				% 		Equipments Requirements:
+				% 		\begin{itemize}
+					
+					% 			\item SMD Soldering Station
+					% 			\item Oscilloscope
+					% 			\item Power Supply
+					% 			\item Function Generator
+					% 		\end{itemize} 
+				% 	\end{minipage}
+			% 	\begin{minipage}{0.3\textwidth}
+				% 		Software Requirements:
+				% 		\begin{itemize}
+					
+					% 			\item MATLAB/Spice
+					% 			\item KiCad
+					% 			\item STM32 CubeIDE
+					
+					% 		\end{itemize} 
+				
+				% 	\end{minipage}
+			% \end{frame}
 		
 		
 		
+		% \section{Budget Estimate}
+		% \begin{frame}{Budget Estimate: Component cost}
+			% 	\begin{table}[]
+				% 		\begin{adjustbox}{width=\columnwidth,center}
+					% 			\begin{tabular}{|r|l|l|r|r|r|}
+						% 				\hline
+						% 				\multicolumn{1}{|l|}{Sl No.} & Component & Description & \multicolumn{1}{l|}{No.} & \multicolumn{1}{l|}{Cost per unit} & \multicolumn{1}{l|}{Total Cost} \\ \hline
+						% 				\multicolumn{1}{|l|}{}       &           &             & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{}           \\ \hline
+						% 				1                      & SPV1040T            & MPPT IC                             & 6                     & 400                   & 2400  \\ \hline
+						% 				2                      & BQ25302             & Battery Charger IC                  & 2                     & 150                   & 300   \\ \hline
+						% 				3                      & NCR18650            & Battery                             & 2                     & 800                   & 1600  \\ \hline
+						% 				4                      & TPS62203DBVTGH      & Buck Converter                      & 2                     & 150                   & 300   \\ \hline
+						% 				5                      & LTC3426ES6\#TRPBF   & Boost Converter                     & 2                     & 500                   & 1000  \\ \hline
+						% 				6                      & LTC2990CMS\#TRPBF   & Voltage, Current Measuring          & 5                     & 560                   & 2800  \\ \hline
+						% 				7                      & LTC 4361CT68-1      & Overvoltage, overcurrent protection & 5                     & 500                   & 2500  \\ \hline
+						% 				8                      & STM 32 F401RE       & Microcontroller                     & 1                     & 2500                  & 2500  \\ \hline
+						% 				9                      & Miscellaneous costs &                                     & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & 2000  \\ \hline
+						% 				\multicolumn{1}{|l|}{} &                     &                                     & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & 15400 \\ \hline
+						% 			\end{tabular}
+					% 		\end{adjustbox}
+				% 	\end{table}
+			
+			
+			
+			
+			% \end{frame}
 		
-	% \end{frame}
-	
-	
-	% \begin{frame}{Budget Estimate: Fabrication cost}
-	% 	\begin{table}[]
-	% 		\begin{tabular}{|l|l|l|l}
-	% 			\cline{1-3}
-	% 			\textbf{Sl. No.} & \textbf{Item}        & \textbf{Amount (Rs.)} &  \\ \cline{1-3}
-	% 			1                & PCB Printing         & 5000                    &  \\ \cline{1-3}
-	% 			2                & SMD soldering        & 990                    &  \\ \cline{1-3}
-	% 			3                & Inductor Fabrication & 1000                  &  \\ \cline{1-3}
-	% 		\end{tabular}
-	% 	\end{table}
-	% \end{frame}
-	
-	
-	\section{Project Timeline}
-	\begin{frame}{Project Timeline}
-		\begin{table}[]
-			\begin{adjustbox}{totalheight=\textheight-3\baselineskip,center}
-				\begin{tabular}{|l|l|l|l|l|l|}
-					\hline
-					Activity &
-					\begin{tabular}[c]{@{}l@{}}Oct\\ week\\ 3-4\end{tabular} &
-					\begin{tabular}[c]{@{}l@{}}Nov\\ week\\ 1-2\end{tabular} &
-					\begin{tabular}[c]{@{}l@{}}Nov\\ week\\ 3-4\end{tabular} &
-					\begin{tabular}[c]{@{}l@{}}Dec\\ week\\ 1-2\end{tabular} &
-					\begin{tabular}[c]{@{}l@{}}Dec\\ week\\ 3-4\end{tabular} \\ \hline
-					&
-					\cellcolor[HTML]{93C47D} &
-					\cellcolor[HTML]{93C47D} &
-					\cellcolor[HTML]{93C47D} &
-					&
-					\\ \cline{2-6} 
-					\multirow{-2}{*}{Literature Review} &
-					\cellcolor[HTML]{6D9EEB} &
-					\cellcolor[HTML]{6D9EEB} &
-					\cellcolor[HTML]{6D9EEB} &
-					&
-					\\ \hline
-					&
-					&
-					\cellcolor[HTML]{93C47D} &
-					\cellcolor[HTML]{93C47D} &
-					\cellcolor[HTML]{93C47D} &
-					\\ \cline{2-6} 
-					\multirow{-2}{*}{Hardware Design} &
-					&
-					\cellcolor[HTML]{6D9EEB} &
-					\cellcolor[HTML]{6D9EEB} &
-					\cellcolor[HTML]{6D9EEB} &
-					\\ \hline
-					&
-					&
-					&
-					&
-					\cellcolor[HTML]{93C47D} &
-					\cellcolor[HTML]{93C47D} \\ \cline{2-6} 
-					\multirow{-2}{*}{Report Writing} &
-					&
-					&
-					&
-					&
-					\\ \hline
-					&
-					&
-					&
-					&
-					\cellcolor[HTML]{93C47D} &
-					\cellcolor[HTML]{93C47D} \\ \cline{2-6} 
-					\multirow{-2}{*}{Component selection} &
-					&
-					&
-					&
-					\cellcolor[HTML]{6D9EEB} &
-					\\ \hline
-					&
-					&
-					&
-					&
-					&
-					\cellcolor[HTML]{93C47D} \\ \cline{2-6} 
-					\multirow{-2}{*}{Component Procurement} &
-					&
-					&
-					&
-					&
-					\\ \hline
-				\end{tabular}
-			\end{adjustbox}
-		\end{table}
-	\end{frame}
-	
-	
-	
-	\section{References}
-	\begin{frame}{References}
 		
-		\begin{thebibliography}{9}
-			
-			\bibitem[1]{p4}
-			Knap, Vaclav \& Vestergaard, Lars \& Stroe, Daniel-Ioan (2020	)
-			\newblock A Review of Battery Technology in CubeSats
-			and Small Satellite Solutions
-			\newblock \emph{Energies, vol. 13}	
-			\bibitem[2]{p2}
-			A. Edpuganti, V. Khadkikar, H. Zeineldin, M. S. E. Moursi and M. Al Hosani (2021)
-			\newblock Comparison of Peak Power Tracking Based Electric Power System Architectures for CubeSats
-			\newblock \emph{IEEE Transactions on Industry Applications, vol. 57, no. 3, pp. 2758-2768, May-June 2021}
-			
-			\bibitem[3]{p3}
-			E. Ayoub and N. Karami (2015)
-			\newblock Review on the charging techniques of a Li-Ion battery
-			\newblock \emph{Third International Conference on Technological Advances in Electrical, Electronics and Computer Engineering (TAEECE), 2015, pp. 50-55}
-		\end{thebibliography}
-	\end{frame}
-	\begin{frame}{References (Contd.)}
+		% \begin{frame}{Budget Estimate: Fabrication cost}
+			% 	\begin{table}[]
+				% 		\begin{tabular}{|l|l|l|l}
+					% 			\cline{1-3}
+					% 			\textbf{Sl. No.} & \textbf{Item}        & \textbf{Amount (Rs.)} &  \\ \cline{1-3}
+					% 			1                & PCB Printing         & 5000                    &  \\ \cline{1-3}
+					% 			2                & SMD soldering        & 990                    &  \\ \cline{1-3}
+					% 			3                & Inductor Fabrication & 1000                  &  \\ \cline{1-3}
+					% 		\end{tabular}
+				% 	\end{table}
+			% \end{frame}
 		
-		\begin{thebibliography}{9}
-			
-			\bibitem[4]{p1}
-			B. Hussein, A. M. Massoud and T. Khattab (2022)
-			\newblock Centralized, Distributed, and Module-Integrated Electric Power System Schemes in CubeSats: Performance Assessment
-			\newblock \emph{ IEEE Access, vol. 10, pp. 55396-55407}
-			\bibitem[5]{p1}A. Edpuganti, V. Khadkikar, M. S. E. Moursi, H. Zeineldin, N. Al-Sayari and K. Al Hosani (2022)
-			\newblock A Comprehensive Review on CubeSat Electrical Power System Architectures
-			\newblock \emph { IEEE Transactions on Power Electronics, vol. 37, no. 3, pp. 3161-3177, March 2022}
-			\bibitem[6]{p1}
-			Aulia Indana, Dharu Arseno, Edwar, and Adilla Safira (2020)
-			\newblock Output Power Analysis of Tel-USat Electrical Power System 
-			\newblock \emph  AIP Conference Proceedings 2226
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		\end{thebibliography}
-	\end{frame}
-	
-	\begin{frame}
-		\huge \center Thank You
 		
-	\end{frame}
-	%\end{frame}
-\end{document} 
+		\section{Project Timeline}
+		\begin{frame}{Project Timeline}
+			\begin{table}[]
+				\begin{adjustbox}{totalheight=\textheight-3\baselineskip,center}
+					\begin{tabular}{|l|l|l|l|l|l|}
+						\hline
+						Activity &
+						\begin{tabular}[c]{@{}l@{}}Oct\\ week\\ 3-4\end{tabular} &
+						\begin{tabular}[c]{@{}l@{}}Nov\\ week\\ 1-2\end{tabular} &
+						\begin{tabular}[c]{@{}l@{}}Nov\\ week\\ 3-4\end{tabular} &
+						\begin{tabular}[c]{@{}l@{}}Dec\\ week\\ 1-2\end{tabular} &
+						\begin{tabular}[c]{@{}l@{}}Dec\\ week\\ 3-4\end{tabular} \\ \hline
+						&
+						\cellcolor[HTML]{93C47D} &
+						\cellcolor[HTML]{93C47D} &
+						\cellcolor[HTML]{93C47D} &
+						&
+						\\ \cline{2-6} 
+						\multirow{-2}{*}{Literature Review} &
+						\cellcolor[HTML]{6D9EEB} &
+						\cellcolor[HTML]{6D9EEB} &
+						\cellcolor[HTML]{6D9EEB} &
+						&
+						\\ \hline
+						&
+						&
+						\cellcolor[HTML]{93C47D} &
+						\cellcolor[HTML]{93C47D} &
+						\cellcolor[HTML]{93C47D} &
+						\\ \cline{2-6} 
+						\multirow{-2}{*}{Hardware Design} &
+						&
+						\cellcolor[HTML]{6D9EEB} &
+						\cellcolor[HTML]{6D9EEB} &
+						\cellcolor[HTML]{6D9EEB} &
+						\\ \hline
+						&
+						&
+						&
+						&
+						\cellcolor[HTML]{93C47D} &
+						\cellcolor[HTML]{93C47D} \\ \cline{2-6} 
+						\multirow{-2}{*}{Report Writing} &
+						&
+						&
+						&
+						&
+						\\ \hline
+						&
+						&
+						&
+						&
+						\cellcolor[HTML]{93C47D} &
+						\cellcolor[HTML]{93C47D} \\ \cline{2-6} 
+						\multirow{-2}{*}{Component selection} &
+						&
+						&
+						&
+						\cellcolor[HTML]{6D9EEB} &
+						\\ \hline
+						&
+						&
+						&
+						&
+						&
+						\cellcolor[HTML]{93C47D} \\ \cline{2-6} 
+						\multirow{-2}{*}{Component Procurement} &
+						&
+						&
+						&
+						&
+						\\ \hline
+					\end{tabular}
+				\end{adjustbox}
+			\end{table}
+		\end{frame}
+		
+		
+		
+		\section{References}
+		\begin{frame}{References}
+			
+			\begin{thebibliography}{9}
+				
+				\bibitem[1]{p4}
+				Knap, Vaclav \& Vestergaard, Lars \& Stroe, Daniel-Ioan (2020	)
+				\newblock A Review of Battery Technology in CubeSats
+				and Small Satellite Solutions
+				\newblock \emph{Energies, vol. 13}	
+				\bibitem[2]{p2}
+				A. Edpuganti, V. Khadkikar, H. Zeineldin, M. S. E. Moursi and M. Al Hosani (2021)
+				\newblock Comparison of Peak Power Tracking Based Electric Power System Architectures for CubeSats
+				\newblock \emph{IEEE Transactions on Industry Applications, vol. 57, no. 3, pp. 2758-2768, May-June 2021}
+				
+				\bibitem[3]{p3}
+				E. Ayoub and N. Karami (2015)
+				\newblock Review on the charging techniques of a Li-Ion battery
+				\newblock \emph{Third International Conference on Technological Advances in Electrical, Electronics and Computer Engineering (TAEECE), 2015, pp. 50-55}
+			\end{thebibliography}
+		\end{frame}
+		\begin{frame}{References (Contd.)}
+			
+			\begin{thebibliography}{9}
+				
+				\bibitem[4]{p1}
+				B. Hussein, A. M. Massoud and T. Khattab (2022)
+				\newblock Centralized, Distributed, and Module-Integrated Electric Power System Schemes in CubeSats: Performance Assessment
+				\newblock \emph{ IEEE Access, vol. 10, pp. 55396-55407}
+				\bibitem[5]{p1}A. Edpuganti, V. Khadkikar, M. S. E. Moursi, H. Zeineldin, N. Al-Sayari and K. Al Hosani (2022)
+				\newblock A Comprehensive Review on CubeSat Electrical Power System Architectures
+				\newblock \emph { IEEE Transactions on Power Electronics, vol. 37, no. 3, pp. 3161-3177, March 2022}
+				\bibitem[6]{p1}
+				Aulia Indana, Dharu Arseno, Edwar, and Adilla Safira (2020)
+				\newblock Output Power Analysis of Tel-USat Electrical Power System 
+				\newblock \emph  AIP Conference Proceedings 2226
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			\end{thebibliography}
+		\end{frame}
+		
+		\begin{frame}
+			\huge \center Thank You
+			
+		\end{frame}
+		%\end{frame}
+	\end{document} 
