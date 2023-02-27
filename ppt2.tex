@@ -112,7 +112,7 @@
 	
 	\author{Presented by :\\Ansaf Niyaz | TRV19EE016  \and Govind Murali | TRV19EE025  \and \\Jijesh J. Kumar | TRV19EE029  \and Naveen A.B. | TRV19EE038}
 	
-	\institute{GEC Barton Hill,Thiruvananthapuram}
+	\institute{EEE Dept., GEC Barton Hill,Thiruvananthapuram}
 	\date{\today}
 	
 	
@@ -145,7 +145,7 @@
 	
 	
 	
-	\section{Objectives}
+	\section{Objective}
 	\begin{frame}
 		
 		\frametitle{Objective}
@@ -420,25 +420,25 @@
 			\end{figure}
 		\end{frame}
 		
-		% \begin{frame}{Hardware Design - Buck and Boost Converters (Contd.)}
-			% 	Buck Converter:
-			% 	\begin{itemize}
-				% 		\item IC: TPS62203
-				% 		\item Input Voltage: 3.6 - 5V
-				% 		\item Output Voltage: 3.3V
-				% 		\item Switching Frequency: 1MHz
-				% 		\item Output Current: 300mA (max.)
-				% 		\end{itemize}
-			% 		Boost Converter:
-			% 			\begin{itemize}
-				% 			\item IC: LTC3426
-				% 			\item Input Voltage: 3.6 - 5V
-				% 			\item Output Voltage: 5V
-				% 			\item Switching Frequency: 1.2MHz
-				% 			\item Output Current: 500mA (max.)
-				% 		\end{itemize}
-			% 	All convertors operate in continuous conduction mode.
-			% 	\end{frame}
+		 \begin{frame}{Hardware Design - Buck and Boost Converters (Contd.)}
+			 	Buck Converter:
+			 	\begin{itemize}
+				 		\item IC: TPS62203
+				 		\item Input Voltage: 3.6 - 5V
+				 		\item Output Voltage: 3.3V
+				 		\item Switching Frequency: 1MHz
+				 		\item Output Current: 300mA (max.)
+				 		\end{itemize}
+			 		Boost Converter:
+			 			\begin{itemize}
+				 			\item IC: LTC3426
+				 			\item Input Voltage: 3.6 - 5V
+				 			\item Output Voltage: 5V
+				 			\item Switching Frequency: 1.2MHz
+				 			\item Output Current: 500mA (max.)
+				 		\end{itemize}
+			 	All convertors operate in continuous conduction mode.
+			 	\end{frame}
 		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring (Contd.) }
 			\begin{figure}[h]
 				\centering
@@ -456,6 +456,17 @@
 			\end{figure}
 		\end{frame}
 		
+					\begin{frame}{Hardware Design - Voltage and Current monitoring IC}
+			
+			\begin{itemize}
+				\item IC: LTC 2990
+				\item Quad input
+				\item Voltage and Current Monitoring
+				\item Communication via I2C serial interface
+			\end{itemize}
+		\end{frame}
+		
+		
 		
 		\begin{frame}{Hardware Design - Battery Charger }
 			\begin{figure}[h]
@@ -467,18 +478,21 @@
 		\end{frame}
 		
 		
-		% \begin{frame}{Hardware Design - Battery Charger (Contd.)}
-			% 	Synchronous Buck Battery Charger:
-			% 	\begin{itemize}
-				% 		\item IC: BQ25302 (With External Power Path configuration)
-				% 		\item Input Voltage: 5V
-				% 		\item Output Voltage: 4.2V (max.)
-				% 		\item Switching Frequency: 1.2MHz
-				% 		\item Output Current: Limited to 1.2A
-				% 		\item Thermistor: Semitec 103AT-2 (10k\ohm)
-				% 		\item Charging Temperature: Limited between 0 - 45 C
-				% 				\end{itemize}
-			% 	\end{frame}
+		 \begin{frame}{Hardware Design - Battery Charger (Contd.)}
+			 	Synchronous Buck Battery Charger:
+			 	\begin{itemize}
+				 		\item IC: BQ25302 (With External Power Path configuration)
+				 		\item Input Voltage: 5V
+				 		\item Output Voltage: 4.2V (max.)
+				 		\item Switching Frequency: 1.2MHz
+				 		\item Output Current: Limited to 1.2A
+				 		\item Thermistor: Semitec 103AT-2 (10k\ohm)
+				 		\item Charging Temperature: Limited between 0 - 45 C
+				 				\end{itemize}
+			 	\end{frame}
+		 	
+		 	
+		 	
 		\begin{frame}{Hardware Design - Battery Charger (Contd.) }
 			\begin{figure}[h]
 				\centering
@@ -508,17 +522,20 @@
 			\end{figure}
 		\end{frame}
 		
-		% 	\begin{frame}{Hardware Design - MPPT (Contd.)}
-			% 	\begin{itemize}
-				% 	\item IC: SPV1040
-				% 	\item MPPT with Perturb and Observe algorithm	
-				% 	\item Input Voltage: 0.3 - 5.5V
-				% 	\item Output Voltage: 5V
-				% 	\item Switching Frequency: 100kHz
-				% 	\item Inbuilt over-current, temperature protection
-				% 	\item Efficiency: 95\%
-				% \end{itemize}
-			% \end{frame}
+		 	\begin{frame}{Hardware Design - MPPT (Contd.)}
+			 	\begin{itemize}
+				 	\item IC: SPV1040
+				 	\item MPPT with Perturb and Observe algorithm	
+				 	\item Input Voltage: 0.3 - 5.5V
+				 	\item Output Voltage: 5V
+				 	\item Switching Frequency: 100kHz
+				 	\item Inbuilt over-current, temperature protection
+				 	\item Efficiency: 95\%
+				 \end{itemize}
+			 \end{frame}
+		 
+		 
+		 
 		\begin{frame}{Hardware Design - MPPT (Contd.) }
 			\begin{figure}[h]
 				\centering
@@ -614,15 +631,7 @@
 			% \end{frame}
 		
 		%	
-		%		\begin{frame}{Hardware Design - Voltage and Current monitoring IC}
-			%		
-			%			\begin{itemize}
-				%			\item IC: LTC 2990
-				%			\item Quad input
-				%			\item Voltage and Current Monitoring
-				%			\item Communication via I2C serial interface
-				%		\end{itemize}
-			%	\end{frame}
+
 		%	
 		
 		
@@ -741,23 +750,127 @@
 		\begin{frame}{Project Timeline}
 \begin{table}[]
 	\begin{adjustbox}{totalheight=\textheight-3\baselineskip,center}
-	\begin{tabular}{|l|l|l|l|l|l|}
-		\hline
-		Activity                                      & \begin{tabular}[c]{@{}l@{}}Jan\\ week\\ 3-4\end{tabular} & \begin{tabular}[c]{@{}l@{}}Feb\\ week\\ 1-2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Feb\\ week\\ 3-4\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mar\\ week\\ 1-2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mar\\ week\\ 3-4\end{tabular} \\ \hline
-		& \cellcolor[HTML]{93C47D}                                 & \cellcolor[HTML]{93C47D}                                 & \cellcolor[HTML]{93C47D}                                 &                                                          &                                                          \\ \cline{2-6} 
-		\multirow{-2}{*}{PCB design and fabrication}  & \cellcolor[HTML]{6D9EEB}                                 & \cellcolor[HTML]{6D9EEB}                                 & \cellcolor[HTML]{6D9EEB}                                 &                                                          &                                                          \\ \hline
-		&                                                          & \cellcolor[HTML]{93C47D}                                 &                                                          & \cellcolor[HTML]{93C47D}                                 &                                                          \\ \cline{2-6} 
-		\multirow{-2}{*}{Procurement of components}   &                                                          & \cellcolor[HTML]{6D9EEB}                                 &                                                          &                                                          &                                                          \\ \hline
-		&                                                          &                                                          & \cellcolor[HTML]{93C47D}                                 & \cellcolor[HTML]{93C47D}                                 &                                                          \\ \cline{2-6} 
-		\multirow{-2}{*}{Microcontroller programming} &                                                          &                                                          &                                                          &                                                          &                                                          \\ \hline
-		&                                                          &                                                          &                                                          & \cellcolor[HTML]{93C47D}                                 & \cellcolor[HTML]{93C47D}                                 \\ \cline{2-6} 
-		\multirow{-2}{*}{Soldering}                   &                                                          &                                                          &                                                          &                                                          &                                                          \\ \hline
-		&                                                          &                                                          &                                                          & \cellcolor[HTML]{93C47D}                                 & \cellcolor[HTML]{93C47D}                                 \\ \cline{2-6}
-		\multirow{-2}{*}{Hardware testing}            &                                                          &                                                          &                                                          &                                                          &                                                          \\ \hline
-		&                                                          &                                                          &            \cellcolor[HTML]{93C47D}                                              &     \cellcolor[HTML]{93C47D}                                                     & \cellcolor[HTML]{93C47D}                                 \\ \cline{2-6} 
-		\multirow{-2}{*}{Report Writing}              &                                                          &                                                          &                                                          &                                                          &                                                          \\ \hline
-	\end{tabular}
-\end{adjustbox}
+		\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+			\hline
+			Activity &
+			\begin{tabular}[c]{@{}l@{}}Jan\\ week\\ 3-4\end{tabular} &
+			\begin{tabular}[c]{@{}l@{}}Feb\\ week\\ 1-2\end{tabular} &
+			\begin{tabular}[c]{@{}l@{}}Feb\\ week\\ 3-4\end{tabular} &
+			\begin{tabular}[c]{@{}l@{}}Mar\\ week\\ 1-2\end{tabular} &
+			\begin{tabular}[c]{@{}l@{}}Mar\\ week\\ 3-4\end{tabular} &
+			\begin{tabular}[c]{@{}l@{}}Apr\\ week\\ 1-2\end{tabular} &
+			\begin{tabular}[c]{@{}l@{}}Apr\\ week\\ 3-4\end{tabular} &
+			\begin{tabular}[c]{@{}l@{}}May\\ week\\ 1-3\end{tabular} \\ \hline
+			&
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} &
+			&
+			&
+			&
+			&
+			\\ \cline{2-9} 
+			\multirow{-2}{*}{PCB design and fabrication} &
+			\cellcolor[HTML]{6D9EEB} &
+			\cellcolor[HTML]{6D9EEB} &
+			\cellcolor[HTML]{6D9EEB} &
+			&
+			&
+			&
+			&
+			\\ \hline
+			&
+			&
+			\cellcolor[HTML]{93C47D} &
+			&
+			\cellcolor[HTML]{93C47D} &
+			&
+			&
+			&
+			\\ \cline{2-9} 
+			\multirow{-2}{*}{Component procurement} &
+			&
+			\cellcolor[HTML]{6D9EEB} &
+			&
+			&
+			&
+			&
+			&
+			\\ \hline
+			&
+			&
+			&
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} &
+			&
+			&
+			&
+			\\ \cline{2-9} 
+			\multirow{-2}{*}{Microcontroller programming} &
+			&
+			&
+			&
+			&
+			&
+			&
+			&
+			\\ \hline
+			&
+			&
+			&
+			&
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} &
+			&
+			&
+			\\ \cline{2-9} 
+			\multirow{-2}{*}{Soldering} &
+			&
+			&
+			&
+			&
+			&
+			&
+			&
+			\\ \hline
+			&
+			&
+			&
+			&
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} &
+			&
+			\\ \cline{2-9} 
+			\multirow{-2}{*}{Troubleshooting} &
+			&
+			&
+			&
+			&
+			&
+			&
+			&
+			\\ \hline
+			&
+			&
+			&
+			&
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} &
+			\cellcolor[HTML]{93C47D} \\ \cline{2-9} 
+			\multirow{-2}{*}{Report Writing} &
+			&
+			&
+			&
+			&
+			&
+			&
+			&
+			\\ \hline
+		\end{tabular}
+	\end{adjustbox}
 \end{table}
 		\end{frame}
 		
