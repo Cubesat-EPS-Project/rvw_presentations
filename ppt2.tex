@@ -488,6 +488,8 @@
 				\item Output Current: Limited to 1.2A
 				\item Thermistor: Semitec 103AT-2 (10k\ohm)
 				\item Charging Temperature: Limited between 0 - 45 C
+				\item Track width: 0.25mm
+				\item Power Path Track width: 0.52mm
 			\end{itemize}
 		\end{frame}
 		
@@ -504,7 +506,7 @@
 		\begin{frame}{Hardware Design - Battery Charger (Contd.) }
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width=0.65\textwidth]{diag/charg 3d.png}
+				\includegraphics[width=0.6\textwidth]{diag/charg 3d.png}
 				\caption{3-D model of Battery Charger}
 				\label{fig:mesh1}
 			\end{figure}
@@ -513,7 +515,7 @@
 		
 		
 		
-		\begin{frame}{Hardware Design - MPPT }
+		\begin{frame}{Hardware Design - Maximum Peak Power Transfer (MPPT) }
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=1\textwidth]{diag/MpptDemoBoard.pdf}
@@ -595,6 +597,20 @@
 					%\label{fig:mesh1}
 				\end{figure}
 			\end{frame}
+		
+				\begin{frame}{PCB Specifications}
+			\begin{itemize}
+				\item Manufacturer: ROBU.IN
+				\item Material: FR-4 (Flame retardant epoxy resin and glass fabric composite)
+				\item Board Thickness: 1.6mm
+				\item Surface finish: HASL{\footnote{Hot Air Solder Levelling}}(with lead)
+				\item Finished Outer Layer Copper: 1 oz
+				\item Finished Inner Layer Copper: 0.5 oz
+				\item PTH{\footnote{Plated Through Hole}} Via diameters: 0.8 mm, 0.6mm(For thermal)	
+				\item PTH Via hole: 0.4 mm
+			\end{itemize}
+		\end{frame}
+		
 		\end{section}
 		%    \begin{frame}
 			%    \frametitle{Hardware Design - Microcontroller}
