@@ -411,152 +411,165 @@
 		\end{frame}
 		
 		\section{Hardware Design}
-		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring }
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.65\textwidth]{diag/1.pdf}
-				\caption{Circuit design of buck and boost converters with monitoring}
-				\label{fig:bubo}
-			\end{figure}
-		\end{frame}
-		
-		\begin{frame}{Hardware Design - Buck and Boost Converters (Contd.)}
-			Synchronous Buck Converter: TPS62203
-			\begin{itemize}
-			
-				\item Input Voltage: 3.6 - 5V
-				\item Output Voltage: 3.3V
-				\item Switching Frequency: 1MHz
-				\item Output Current: 300mA (max.)
-			\end{itemize}
-			Boost Converter: LTC3426
-			\begin{itemize}
-			
-				\item Input Voltage: 3.6 - 5V
-				\item Output Voltage: 5V
-				\item Switching Frequency: 1.2MHz
-				\item Output Current: 800mA (max.)
-			\end{itemize}
-			All converters operate in continuous conduction mode.
-		\end{frame}
-		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring (Contd.) }
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.6\textwidth]{diag/1 pcb.jpg}
-				\caption{PCB Layout of buck and boost converters with monitoring (55mm x 35mm)}
-				\label{fig:bubo}
-			\end{figure}
-		\end{frame}
-		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring (Contd.) }
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.6\textwidth]{diag/1 3d.jpg}
-				\caption{3-D model of buck and boost converters with monitoring}
-				\label{fig:bubo}
-			\end{figure}
-		\end{frame}
-		
-		\begin{frame}{Hardware Design - Voltage and Current monitoring IC}
-			
-			\begin{itemize}
-				\item IC: LTC 2990
-				\item Operating Voltage: 2.9V - 5.5V	
-				\item Quad input
-				\item 14 bit ADC	
-				\item Voltage (±0.1V accuracy) and Current Monitoring 
-				\item Inbuilt Internal Temperature Monitoring (±0.5°C Accuracy, 0.06°C Resolution)
-				\item Communication via I2C serial interface
-			\end{itemize}
-		\end{frame}
+				\begin{frame}{Hardware Design}
+					\begin{figure}[h]
+								\centering
+								\includegraphics[width=0.6\textwidth]{diag/PCB_compiled.png}
+								\caption{Circuit design of buck and boost converters with monitoring}
+								\label{fig:bubo}
+							\end{figure}
+					\end{frame}
 		
 		
 		
-		\begin{frame}{Hardware Design - Battery Charger }
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.77\textwidth]{diag/charg.pdf}
-				\caption{Circuit design of Battery Charger}
-				\label{fig:mesh1}
-			\end{figure}
-		\end{frame}
-		
-		
-		\begin{frame}{Hardware Design - Battery Charger (Contd.)}
-			Synchronous Buck Battery Charger:
-			\begin{itemize}
-				\item IC: BQ25302 (With External Power Path configuration)
-				\item Input Voltage: 5V
-				\item Output Voltage: 4.2V (max.)
-				\item Switching Frequency: 1.2MHz
-				\item Output Current: Limited to 1.2A
-				\item Thermistor: Semitec 103AT-2 (10k\ohm)
-				\item Charging Temperature: Limited between 0 - 45 C
-				\item Track width: 0.25mm
-				\item Power Path Track width: 0.52mm
-			\end{itemize}
-		\end{frame}
-		
-		
-		
-		\begin{frame}{Hardware Design - Battery Charger (Contd.) }
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.6\textwidth]{diag/charg pcb.jpg}
-				\caption{PCB Layout of Battery Charger (29mm x 20mm)}
-				\label{fig:mesh1}
-			\end{figure}
-		\end{frame}
-		\begin{frame}{Hardware Design - Battery Charger (Contd.) }
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.6\textwidth]{diag/charg 3d.png}
-				\caption{3-D model of Battery Charger}
-				\label{fig:mesh1}
-			\end{figure}
-		\end{frame}
-		
-		
-		
-		
-		\begin{frame}{Hardware Design - Maximum Peak Power Transfer (MPPT) }
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=1\textwidth]{diag/MpptDemoBoard.pdf}
-				\caption{Circuit design of MPPT}
-				\label{fig:mesh1}
-			\end{figure}
-		\end{frame}
-		
-		\begin{frame}{Hardware Design - MPPT (Contd.)}
-			\begin{itemize}
-				\item IC: SPV1040
-				\item MPPT with Perturb and Observe algorithm	
-				\item Input Voltage: 0.3 - 5.5V
-				\item Output Voltage: 5V
-				\item Switching Frequency: 100kHz
-				\item Inbuilt over-current, temperature protection
-				\item Efficiency: 95\%
-			\end{itemize}
-		\end{frame}
-		
-		
-		
-		\begin{frame}{Hardware Design - MPPT (Contd.) }
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.6\textwidth]{diag/MpptDemopcb.jpg}
-				\caption{PCB Layout of MPPT (48mm x 34mm)}
-				\label{fig:mesh1}
-			\end{figure}
-		\end{frame}
-		\begin{frame}{Hardware Design - MPPT (Contd.)}
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=0.6\textwidth]{diag/MpptDemo3d.jpg}
-				\caption{3-D model of MPPT}
-				\label{fig:mesh1}
-			\end{figure}
-		\end{frame}
+%		
+%		\section{Hardware Design}
+%		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring }
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[width=0.65\textwidth]{diag/1.pdf}
+%				\caption{Circuit design of buck and boost converters with monitoring}
+%				\label{fig:bubo}
+%			\end{figure}
+%		\end{frame}
+%		
+%		\begin{frame}{Hardware Design - Buck and Boost Converters (Contd.)}
+%			Synchronous Buck Converter: TPS62203
+%			\begin{itemize}
+%			
+%				\item Input Voltage: 3.6 - 5V
+%				\item Output Voltage: 3.3V
+%				\item Switching Frequency: 1MHz
+%				\item Output Current: 300mA (max.)
+%			\end{itemize}
+%			Boost Converter: LTC3426
+%			\begin{itemize}
+%			
+%				\item Input Voltage: 3.6 - 5V
+%				\item Output Voltage: 5V
+%				\item Switching Frequency: 1.2MHz
+%				\item Output Current: 800mA (max.)
+%			\end{itemize}
+%			All converters operate in continuous conduction mode.
+%		\end{frame}
+%		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring (Contd.) }
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[width=0.6\textwidth]{diag/1 pcb.jpg}
+%				\caption{PCB Layout of buck and boost converters with monitoring (55mm x 35mm)}
+%				\label{fig:bubo}
+%			\end{figure}
+%		\end{frame}
+%		\begin{frame}{Hardware Design - Buck and Boost Converters with Monitoring (Contd.) }
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[width=0.6\textwidth]{diag/1 3d.jpg}
+%				\caption{3-D model of buck and boost converters with monitoring}
+%				\label{fig:bubo}
+%			\end{figure}
+%		\end{frame}
+%		
+%		\begin{frame}{Hardware Design - Voltage and Current monitoring IC}
+%			
+%			\begin{itemize}
+%				\item IC: LTC 2990
+%				\item Operating Voltage: 2.9V - 5.5V	
+%				\item Quad input
+%				\item 14 bit ADC	
+%				\item Voltage (±0.1V accuracy) and Current Monitoring 
+%				\item Inbuilt Internal Temperature Monitoring (±0.5°C Accuracy, 0.06°C Resolution)
+%				\item Communication via I2C serial interface
+%			\end{itemize}
+%		\end{frame}
+%		
+%		
+%		
+%		\begin{frame}{Hardware Design - Battery Charger }
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[width=0.77\textwidth]{diag/charg.pdf}
+%				\caption{Circuit design of Battery Charger}
+%				\label{fig:mesh1}
+%			\end{figure}
+%		\end{frame}
+%		
+%		
+%		\begin{frame}{Hardware Design - Battery Charger (Contd.)}
+%			Synchronous Buck Battery Charger:
+%			\begin{itemize}
+%				\item IC: BQ25302 (With External Power Path configuration)
+%				\item Input Voltage: 5V
+%				\item Output Voltage: 4.2V (max.)
+%				\item Switching Frequency: 1.2MHz
+%				\item Output Current: Limited to 1.2A
+%				\item Thermistor: Semitec 103AT-2 (10k\ohm)
+%				\item Charging Temperature: Limited between 0 - 45 C
+%				\item Track width: 0.25mm
+%				\item Power Path Track width: 0.52mm
+%			\end{itemize}
+%		\end{frame}
+%		
+%		
+%		
+%		\begin{frame}{Hardware Design - Battery Charger (Contd.) }
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[width=0.6\textwidth]{diag/charg pcb.jpg}
+%				\caption{PCB Layout of Battery Charger (29mm x 20mm)}
+%				\label{fig:mesh1}
+%			\end{figure}
+%		\end{frame}
+%		\begin{frame}{Hardware Design - Battery Charger (Contd.) }
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[width=0.6\textwidth]{diag/charg 3d.png}
+%				\caption{3-D model of Battery Charger}
+%				\label{fig:mesh1}
+%			\end{figure}
+%		\end{frame}
+%		
+%		
+%		
+%		
+%		\begin{frame}{Hardware Design - Maximum Peak Power Transfer (MPPT) }
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[width=1\textwidth]{diag/MpptDemoBoard.pdf}
+%				\caption{Circuit design of MPPT}
+%				\label{fig:mesh1}
+%			\end{figure}
+%		\end{frame}
+%		
+%		\begin{frame}{Hardware Design - MPPT (Contd.)}
+%			\begin{itemize}
+%				\item IC: SPV1040
+%				\item MPPT with Perturb and Observe algorithm	
+%				\item Input Voltage: 0.3 - 5.5V
+%				\item Output Voltage: 5V
+%				\item Switching Frequency: 100kHz
+%				\item Inbuilt over-current, temperature protection
+%				\item Efficiency: 95\%
+%			\end{itemize}
+%		\end{frame}
+%		
+%		
+%		
+%		\begin{frame}{Hardware Design - MPPT (Contd.) }
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[width=0.6\textwidth]{diag/MpptDemopcb.jpg}
+%				\caption{PCB Layout of MPPT (48mm x 34mm)}
+%				\label{fig:mesh1}
+%			\end{figure}
+%		\end{frame}
+%		\begin{frame}{Hardware Design - MPPT (Contd.)}
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[width=0.6\textwidth]{diag/MpptDemo3d.jpg}
+%				\caption{3-D model of MPPT}
+%				\label{fig:mesh1}
+%			\end{figure}
+%		\end{frame}
 		% \begin{frame}{Hardware Design - Protection }
 		% 	\begin{figure}[h]
 		% 		\centering
@@ -600,20 +613,14 @@
 %					%\label{fig:mesh1}
 %				\end{figure}
 %			\end{frame}
-	\section{PCB Specifications}	
-				\begin{frame}{PCB Specifications}
-			\begin{itemize}
-				\item Manufacturer: ROBU.IN
-				\item Material: FR-4 (Flame retardant epoxy resin and glass fabric composite)
-				\item Board Thickness: 1.6mm
-				\item Surface finish: HASL{\footnote{Hot Air Solder Levelling}}(with lead)
-				\item Finished Outer Layer Copper: 1 oz
-				\item Finished Inner Layer Copper: 0.5 oz
-				\item PTH{\footnote{Plated Through Hole}} Via diameters: 0.8 mm, 0.6mm (For thermal)	
-				\item PTH Via hole: 0.4 mm
-				\item No. of boards: 4 designs x 5 pcs.
-				\item Total cost: Rs. 3096
-			\end{itemize}
+	\section{Fully Integrated EPS}	
+				\begin{frame}{Fully Integrated EPS}
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.8\textwidth]{diag/EPS_FrontBack.png}
+				\caption{Circuit design of MPPT}
+				\label{fig:meshn}
+			\end{figure}
 		\end{frame}
 			
 
@@ -671,22 +678,31 @@
 %
 
 %
-%\section{Work Accomplished}
-%						\begin{frame}{Work Accomplished}
-%		\begin{itemize}
-%			\item  PCB design, fabrication and soldering
-%			\item Preliminary testing of all modules
-%			\item STM32 Programming:
-%			\begin{itemize}
-%				\item Flash Memory access
-%				\item I2C detection
-%				\item Battery charger test setup automation
-%				
-%				
-%			\end{itemize}
-%		\end{itemize}
-%	\end{frame}
-%	
+\section{Work Accomplished and Future Scope}
+						\begin{frame}{Work Accomplished and Future Scope}
+	\begin{itemize}
+		\item Work Accomplished
+		\begin{itemize}
+			\item Initial power budget
+			\item System architecture
+			\item PCB design, fabrication and soldering 
+			\item Preliminary testing of all modules
+			\item line regulation, load regulation
+			\item Design of fully integrated EPS
+		\end{itemize}
+	\end{itemize}
+	\begin{itemize}
+		\item Future Scope
+		\begin{itemize}
+			\item Update power budget
+			\item Improvements in design
+			\item Battery heater, Remove Before Flight pin, Watchdog timer
+			\item Circuit Redundancy
+			\item FreeRTOS in STM32 microcontroller
+		\end{itemize}
+	\end{itemize}
+	\end{frame}
+	
 %	\section{Work to be Accomplished}
 %							\begin{frame}{Work to be Accomplished}
 %		\begin{itemize}
@@ -1026,58 +1042,58 @@
 %		
 		
 		
-		\section{References}
-		\begin{frame}{References}
-			
-			\begin{thebibliography}{9}
-				
-				\bibitem[1]{p4}
-				Knap, Vaclav \& Vestergaard, Lars \& Stroe, Daniel-Ioan (2020	)
-				\newblock A Review of Battery Technology in CubeSats
-				and Small Satellite Solutions
-				\newblock \emph{Energies, vol. 13}	
-				\bibitem[2]{p2}
-				A. Edpuganti, V. Khadkikar, H. Zeineldin, M. S. E. Moursi and M. Al Hosani (2021)
-				\newblock Comparison of Peak Power Tracking Based Electric Power System Architectures for CubeSats
-				\newblock \emph{IEEE Transactions on Industry Applications, vol. 57, no. 3, pp. 2758-2768, May-June 2021}
-				
-				\bibitem[3]{p3}
-				E. Ayoub and N. Karami (2015)
-				\newblock Review on the charging techniques of a Li-Ion battery
-				\newblock \emph{Third International Conference on Technological Advances in Electrical, Electronics and Computer Engineering (TAEECE), 2015, pp. 50-55}
-			\end{thebibliography}
-		\end{frame}
-		\begin{frame}{References (Contd.)}
-			
-			\begin{thebibliography}{9}
-				
-				\bibitem[4]{p1}
-				B. Hussein, A. M. Massoud and T. Khattab (2022)
-				\newblock Centralized, Distributed, and Module-Integrated Electric Power System Schemes in CubeSats: Performance Assessment
-				\newblock \emph{ IEEE Access, vol. 10, pp. 55396-55407}
-				\bibitem[5]{p1}A. Edpuganti, V. Khadkikar, M. S. E. Moursi, H. Zeineldin, N. Al-Sayari and K. Al Hosani (2022)
-				\newblock A Comprehensive Review on CubeSat Electrical Power System Architectures
-				\newblock \emph { IEEE Transactions on Power Electronics, vol. 37, no. 3, pp. 3161-3177, March 2022}
-				\bibitem[6]{p1}
-				Aulia Indana, Dharu Arseno, Edwar, and Adilla Safira (2020)
-				\newblock Output Power Analysis of Tel-USat Electrical Power System 
-				\newblock \emph  AIP Conference Proceedings 2226
-				
-				\bibitem[7]{p1}
-PC/104 Embedded Consortium (2008)
-\newblock PC/104 Specification
-Version 2.6
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			\end{thebibliography}
-		\end{frame}
+%		\section{References}
+%		\begin{frame}{References}
+%			
+%			\begin{thebibliography}{9}
+%				
+%				\bibitem[1]{p4}
+%				Knap, Vaclav \& Vestergaard, Lars \& Stroe, Daniel-Ioan (2020	)
+%				\newblock A Review of Battery Technology in CubeSats
+%				and Small Satellite Solutions
+%				\newblock \emph{Energies, vol. 13}	
+%				\bibitem[2]{p2}
+%				A. Edpuganti, V. Khadkikar, H. Zeineldin, M. S. E. Moursi and M. Al Hosani (2021)
+%				\newblock Comparison of Peak Power Tracking Based Electric Power System Architectures for CubeSats
+%				\newblock \emph{IEEE Transactions on Industry Applications, vol. 57, no. 3, pp. 2758-2768, May-June 2021}
+%				
+%				\bibitem[3]{p3}
+%				E. Ayoub and N. Karami (2015)
+%				\newblock Review on the charging techniques of a Li-Ion battery
+%				\newblock \emph{Third International Conference on Technological Advances in Electrical, Electronics and Computer Engineering (TAEECE), 2015, pp. 50-55}
+%			\end{thebibliography}
+%		\end{frame}
+%		\begin{frame}{References (Contd.)}
+%			
+%			\begin{thebibliography}{9}
+%				
+%				\bibitem[4]{p1}
+%				B. Hussein, A. M. Massoud and T. Khattab (2022)
+%				\newblock Centralized, Distributed, and Module-Integrated Electric Power System Schemes in CubeSats: Performance Assessment
+%				\newblock \emph{ IEEE Access, vol. 10, pp. 55396-55407}
+%				\bibitem[5]{p1}A. Edpuganti, V. Khadkikar, M. S. E. Moursi, H. Zeineldin, N. Al-Sayari and K. Al Hosani (2022)
+%				\newblock A Comprehensive Review on CubeSat Electrical Power System Architectures
+%				\newblock \emph { IEEE Transactions on Power Electronics, vol. 37, no. 3, pp. 3161-3177, March 2022}
+%				\bibitem[6]{p1}
+%				Aulia Indana, Dharu Arseno, Edwar, and Adilla Safira (2020)
+%				\newblock Output Power Analysis of Tel-USat Electrical Power System 
+%				\newblock \emph  AIP Conference Proceedings 2226
+%				
+%				\bibitem[7]{p1}
+%PC/104 Embedded Consortium (2008)
+%\newblock PC/104 Specification
+%Version 2.6
+%				
+%				
+%				
+%				
+%				
+%				
+%				
+%				
+%				
+%			\end{thebibliography}
+%		\end{frame}
 		
 		\begin{frame}
 			\huge \center Thank You
